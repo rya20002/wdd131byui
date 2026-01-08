@@ -1,12 +1,12 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #1f1f1f;
+    color: black;
 }
 .card {
     width: 650px;
     margin: 60px auto;
     padding: 65px 85px 60px;
-    border: 1px solid #d7d7d7;
+    border: 1px solid black;
 }
 header {
     text-align:center;
@@ -29,7 +29,7 @@ hr {
     width: 85%;
     margin: 15px auto 25px;
     border: none;
-    border-top: 1px solid #e6e6e6;
+    border-top: 1px solid white;
 }
 p,p1 {
     display: block;
@@ -56,4 +56,28 @@ img {
     display: block;
     width: 120px;
     margin: 35px auto 0;
+}
+.modeSelector {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1000;
+}
+.modeSelector select {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+}
+/* dark mode*/
+body.dark {
+    background-color: black;
+    color: white;
+}
+body.dark .card {
+    border-color: white;
+}
+body.dark hr {
+    border-top: 1px solid white;
+}
+body.dark header h2 {
+    color: #9bbcf0;
 }
